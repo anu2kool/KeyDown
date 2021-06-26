@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<h1>Hello!!</h1>
+	<textarea id="textarea"></textarea>
+	<p id="demo"></p>
+<script type="text/javascript">
+	
+	$(document).ready(function (){
+		$('#textarea').on('keydown', function(e){
+			const para_element = document.getElementById('demo');
+			para_element.innerHTML = e.which;
+		});
+	});
+
+</script>
+
+</body>
+</html>
