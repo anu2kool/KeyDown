@@ -11,9 +11,9 @@
 <script type="text/javascript">
 	
 	$(document).ready(function (){
-		$('#textarea').on('keyup', function(e){
+		$('#textarea').on('input', function(e){
 			const para_element = document.getElementById('demo');
-			para_element.innerHTML = e.which;
+			para_element.innerHTML = e.target.value;
 		});
 	});
 
